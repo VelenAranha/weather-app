@@ -1,0 +1,37 @@
+@import '../../src/styles/index.scss';
+
+.page {
+  min-height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(
+    to bottom,
+    #5d3fa9,
+    #5d4bbc,
+    #5d5dcd,
+    #5d62d3,
+    #5d5bcd,
+    #5d55c9
+  );
+  background: linear-gradient(
+    to right,
+    #5d53c5,
+    #5d5eca,
+    #6d6dcb,
+    #9a73c6,
+    #ae6fb5,
+    #ae639e,
+    #ae568e
+  );
+
+  &-content {
+    width: 100%;
+    padding: 0 24px;
+
+    @include respond-to('large') {
+      padding: 0;
+      width: 960px;
+      margin: auto;
+    }
+  }
+}
